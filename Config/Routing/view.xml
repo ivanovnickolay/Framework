@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<document>
+ <action id="add">
+ 	<name>AddElement</name>
+ </action>
+ 
+ <action id="new">
+ 	<name>NewElement</name>
+ </action>
+</document>
