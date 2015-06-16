@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="E:\OpenServer522\OpenServer\domains\Task\Task.clpprj">
+	<settings><PM_URL><![CDATA[http://Task/]]></PM_URL><PM_HOME_URL><![CDATA[http://Task/]]></PM_HOME_URL><PM_LIBS><![CDATA[]]></PM_LIBS><PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION><PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR><PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE></settings><removed value=";"/><added value=""/><lastopfiles>
+		<file name="E:\OpenServer522\OpenServer\domains\Task\Config\Routing\view.xml"/>
+		<file name="E:\OpenServer522\OpenServer\domains\Task\ConfigClass.php"/>
+	</lastopfiles>
+	<errors version="5.3">
+	</errors>
+	<codestructure version="5.0">
+		<phptree>
+			<treenode node="ConfigClass;PHP:Class Name;E:\OpenServer522\OpenServer\domains\Task\Codelobster0.php;f0;5;1;13;;E:\OpenServer522\OpenServer\domains\Task\ConfigClass.php;f0;2;1;32;;;;vpos;;v;;r;;d0,3;;b0,0;;m">
+				<treenode node="__construct;PHP:Function Name;E:\OpenServer522\OpenServer\domains\Task\Codelobster0.php;f1;9;2;12;;E:\OpenServer522\OpenServer\domains\Task\ConfigClass.php;f1;6;2;23;;E:\OpenServer522\OpenServer\domains\Task\ConfigClass.php;f1;6;2;23;;E:\OpenServer522\OpenServer\domains\Task\ConfigClass.php;f1;6;2;36;;E:\OpenServer522\OpenServer\domains\Task\ConfigClass.php;f1;6;2;23;;E:\OpenServer522\OpenServer\domains\Task\ConfigClass.php;f1;6;2;23;;;;vpos;;v;;r;;d1,7;;b0,0;;mName;;p">
+					<treenode node="Name;PHP:Var Name;E:\OpenServer522\OpenServer\domains\Task\ConfigClass.php;f22;6;27;6;;E:\OpenServer522\OpenServer\domains\Task\ConfigClass.php;f22;6;27;6;;E:\OpenServer522\OpenServer\domains\Task\ConfigClass.php;f22;6;27;6;;E:\OpenServer522\OpenServer\domains\Task\ConfigClass.php;f22;6;27;6;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="NameFile;PHP:Var Name;E:\OpenServer522\OpenServer\domains\Task\Codelobster0.php;f1;10;10;10;;E:\OpenServer522\OpenServer\domains\Task\ConfigClass.php;f2;9;11;9;;E:\OpenServer522\OpenServer\domains\Task\ConfigClass.php;f2;9;11;9;;E:\OpenServer522\OpenServer\domains\Task\ConfigClass.php;f2;9;11;9;;E:\OpenServer522\OpenServer\domains\Task\ConfigClass.php;f2;9;11;9;;E:\OpenServer522\OpenServer\domains\Task\ConfigClass.php;f2;9;11;9;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\OpenServer522\OpenServer\domains\Task\ConfigClass.php;f3;14;8;14;;E:\OpenServer522\OpenServer\domains\Task\ConfigClass.php;f3;14;8;14;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="ValidAction;PHP:Function Name;E:\OpenServer522\OpenServer\domains\Task\ConfigClass.php;f1;24;2;31;;E:\OpenServer522\OpenServer\domains\Task\ConfigClass.php;f1;24;2;31;;;;vpos;;v;;r;;d1,25;;b0,0;;mAction;;p">
+					<treenode node="Action;PHP:Var Name;E:\OpenServer522\OpenServer\domains\Task\ConfigClass.php;f22;24;29;24;;E:\OpenServer522\OpenServer\domains\Task\ConfigClass.php;f22;24;29;24;;E:\OpenServer522\OpenServer\domains\Task\ConfigClass.php;f22;24;29;24;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="Nametag;PHP:Var Name;E:\OpenServer522\OpenServer\domains\Task\ConfigClass.php;f2;28;10;28;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;E:\OpenServer522\OpenServer\domains\Task\ConfigClass.php;f2;27;7;27;;E:\OpenServer522\OpenServer\domains\Task\ConfigClass.php;f2;27;7;27;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="NameFile;PHP:Var Name;E:\OpenServer522\OpenServer\domains\Task\Codelobster0.php;f1;7;10;7;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="xml_element;PHP:Var Name;E:\OpenServer522\OpenServer\domains\Task\ConfigClass.php;f9;5;21;5;;E:\OpenServer522\OpenServer\domains\Task\ConfigClass.php;f9;5;21;5;;E:\OpenServer522\OpenServer\domains\Task\ConfigClass.php;f9;5;21;5;;;;vpos;;v;;r;;d-1,-1;;b3,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="Proba;PHP:Var Name;E:\OpenServer522\OpenServer\domains\Task\ConfigClass.php;f0;33;6;33;;;;vposConfigClass;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+		</phptree>
+		<jstree>
+		</jstree>
+		<scsstree>
+		</scsstree>
+		<lesstree>
+		</lesstree>
+	</codestructure><cakedata>
+	</cakedata>
+	<dplmenupath>
+	</dplmenupath><laravael>
+	</laravael><smartyassings>
+	</smartyassings><twigtemplate>
+	</twigtemplate><yiidata>
+	</yiidata>
+	<todoblock>
+	</todoblock>
+	<filescache>
+		<file name="E:\OpenServer522\OpenServer\domains\Task\Config\Routing\Текстовый документ.txt" crc="0"/>
+		<file name="E:\OpenServer522\OpenServer\domains\Task\Config\Routing\view.xml" crc="-880795462"/>
+		<file name="E:\OpenServer522\OpenServer\domains\Task\ConfigClass.php" crc="-198789337"/>
+	</filescache>
+</project>

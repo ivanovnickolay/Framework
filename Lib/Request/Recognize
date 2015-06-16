@@ -1,0 +1,29 @@
+class recognize
+{
+	private $Url;
+	private $Controller;
+	private $Action;
+	private $ParamArray;
+
+function __constructor ()
+	{
+		// Получение строки запроса 
+
+
+	}
+
+public function setController()
+	{
+
+	}
+
+public function setAction()
+	{
+	
+	}
+
+public function setParam()
+	{
+	
+	}
+}
