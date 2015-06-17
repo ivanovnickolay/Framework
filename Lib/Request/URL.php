@@ -3,7 +3,7 @@
  * Класс возвращает параметры запроса 
  * разложенные по названию контроллера, действия и параметрам
  */
- namespace FreamWork;
+ //namespace FreamWork;
  
   class Url 
   {
@@ -16,7 +16,9 @@
   	{
   		// получаем массив значений из URI, который был передан для того, чтобы получить доступ к этой странице. 
   		//return  explode($_SERVER['REQUEST_URI'], '/') ;
-      return  explode($str, '/') ;
+      $S=trim($str,'/');
+      $exp=explode('/',$S) ;
+      return $exp; 
   		
   	}
   	/**

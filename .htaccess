@@ -1,4 +1,14 @@
-RewriteEngine on 
+# RewriteEngine on 
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^(.*)$ start.php?route=$1 [L,QSA]
+
+#включаем поддержку перезаписи запросов
+RewriteEngine On
+#базовая папка от которой будет использоваться перезапись запросов (закомментировано)
+# RewriteBase /
+#опеределяем файлы и папки
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ start.php?route=$1 [L,QSA]
+# RewriteRule ^(.*)$ ./start.php
+RewriteRule . start.php
