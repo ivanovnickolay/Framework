@@ -31,7 +31,7 @@ function __construct()
  **/
 public function Call()
 {
-	$Path = "Controller/$this->Controller.php";
+	$Path = "../Controller/$this->Controller.php";
 	//Проверяем начилие файла 
 	if (!file_exists($Path)) 
 	{
@@ -74,7 +74,6 @@ public function Call()
         //Call the method with correct amount of params
         // but as false for params that have not been passed!
       //  call_user_func_array(array(new $this->obj,$Route->getMethod()),$this->params);
-//?>
-
+///
+//
 }
-?>

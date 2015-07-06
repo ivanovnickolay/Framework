@@ -4,6 +4,90 @@
 		"selected_items":
 		[
 			[
+				"retu",
+				"return"
+			],
+			[
+				"get",
+				"getnumberofparameters"
+			],
+			[
+				"ger",
+				"getMethod($Route"
+			],
+			[
+				"Re",
+				"ReflectorClass"
+			],
+			[
+				"el",
+				"else 	Language Construct"
+			],
+			[
+				"has",
+				"hasMethod"
+			],
+			[
+				"R",
+				"ReflectorClass"
+			],
+			[
+				"i",
+				"if	if …"
+			],
+			[
+				"p",
+				"public"
+			],
+			[
+				"th",
+				"this	(ControllerBase.php)"
+			],
+			[
+				"incl",
+				"include_once	Language Construct"
+			],
+			[
+				"P",
+				"PATH_ROOT	(Start.php)"
+			],
+			[
+				"__",
+				"__DIR__	Magic Constant"
+			],
+			[
+				"dirna",
+				"dirname()	standard Function"
+			],
+			[
+				"b",
+				"body	Tag"
+			],
+			[
+				"Co",
+				"ControllerBase	(ControllerBase.php)"
+			],
+			[
+				"e",
+				"exp"
+			],
+			[
+				"Call",
+				"callController"
+			],
+			[
+				"class",
+				"class	class …"
+			],
+			[
+				"o",
+				"Obj"
+			],
+			[
+				"ca",
+				"call_user_func_array"
+			],
+			[
 				"Met",
 				"method_exists"
 			],
@@ -28,10 +112,6 @@
 				"Path"
 			],
 			[
-				"retu",
-				"return 	Language Construct"
-			],
-			[
 				"pat",
 				"Path"
 			],
@@ -46,10 +126,6 @@
 			[
 				"A",
 				"Action	(URL.php)"
-			],
-			[
-				"Co",
-				"Controller	(URL.php)"
 			],
 			[
 				"Incl",
@@ -100,10 +176,6 @@
 				"private"
 			],
 			[
-				"e",
-				"Elem"
-			],
-			[
 				"dom",
 				"DOMDocument"
 			],
@@ -116,12 +188,53 @@
 	"buffers":
 	[
 		{
-			"contents": "Local:    master E:\\OpenServer522\\OpenServer\\domains\\Task\nHead:     638084f First\n\n\nUnstaged changes:\n	Modified   Lib/CallController.php\n	Modified   Task_.sublime-workspace\n\nStaged changes:\n	Added      .htaccess\n	Added      Lib/CallController\n	Added      Lib/CallController.php\n	Added      Lib/Config/ConfigBase.php\n	Added      Lib/Config/ConfigBoot.php\n	Added      Lib/Config/ConfigDB.php\n	Added      Lib/Config/ConfigObserver.php\n	Added      Lib/Config/ConfigRouting.php\n	Added      Lib/Config/ConfigSingleton.php\n	Added      Lib/Config/folder/ConfigClass.php\n	Added      Lib/Config/folder/listing9.04.php\n	Added      Lib/DB/DB.php\n	Added      Lib/Request/Recognize\n	Added      Lib/Request/Recognize.php\n	Added      Lib/Request/URL.php\n	Added      Start.php\n	Added      Task.clpprj\n	Added      Task_.sublime-workspace\n	Added      nbproject/private/config.properties\n	Added      nbproject/private/private.properties\n	Added      nbproject/private/private.xml\n	Added      nbproject/project.properties\n	Added      nbproject/project.xml\n	Added      recognition.php\n\n\n# Movement:\n#    r = refresh status\n#    1-5 = jump to section\n#    n = next item, N = next section\n#    p = previous item, P = previous section\n#\n# Staging:\n#    s = stage file/section, S = stage all unstaged files\n#    ctrl+shift+s = stage all unstaged and untracked files\n#    u = unstage file/section, U = unstage all files\n#    backspace = discard file/section, shift+backspace = discard everything\n#\n# Commit:\n#    c = commit, C = commit -a (add unstaged)\n#    ctrl+shift+c = commit --amend (amend previous commit)\n#\n# Other:\n#    i = ignore file, I = ignore pattern\n#    enter = open file\n#    d = view diff\n#\n# Stashes:\n#    a = apply stash, A = pop stash\n#    z = create stash, Z = create stash including untracked files\n#    backspace = discard stash",
+			"file": "Lib/Controller/CallController.php",
 			"settings":
 			{
-				"buffer_size": 1824,
+				"buffer_size": 2907,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Windows",
-				"name": "*git-status*: Task",
+				"name": "Xdebug Context",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"name": "Xdebug Watch",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"name": "Xdebug Stack",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "=> E:\\OpenServer522\\OpenServer\\domains\\Task\\Lib\\Request\\URL.php\n	|+| 1\n=> E:\\OpenServer522\\OpenServer\\domains\\Task\\Templates\\First.tpl\n	|+| 7\n",
+			"settings":
+			{
+				"buffer_size": 142,
+				"line_ending": "Windows",
+				"name": "Xdebug Breakpoint",
 				"read_only": true,
 				"scratch": true
 			}
@@ -134,45 +247,121 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 392.0,
-		"last_filter": "git:a",
+		"height": 196.0,
+		"last_filter": "Git:pu",
 		"selected_items":
 		[
 			[
-				"git:a",
-				"Git: Add Current File"
+				"Git:pu",
+				"Git: Push"
 			],
 			[
-				"p",
-				"Package Control: List Packages"
+				"Git:add",
+				"Git: Add Remote"
 			],
 			[
-				"git:",
+				"Git:co",
+				"Git: Commit"
+			],
+			[
+				"Git:a",
+				"Git: Quick Add"
+			],
+			[
+				"Git:st",
 				"Git: Status"
 			],
 			[
-				"git:ad",
+				"Git:c",
+				"Git: Commit"
+			],
+			[
+				"Git:",
+				"Git: Quick Add"
+			],
+			[
+				"Git:ad",
+				"Git: Quick Add"
+			],
+			[
+				"Git:s",
+				"Git: Status"
+			],
+			[
+				"Packe",
+				"Preferences: Browse Packages"
+			],
+			[
+				"git",
+				"Set Syntax: SublimeGit Status"
+			],
+			[
+				"p",
+				"Package Control: Install Package"
+			],
+			[
+				"git:",
+				"Git: Diff Cached"
+			],
+			[
+				"git:add",
 				"Git: Add Current File"
 			],
 			[
 				"git:q",
-				"Git: Quick Status"
+				"Git: Quick Commit"
 			],
 			[
-				"git:add",
+				"git:Add",
 				"Git: Quick Add"
+			],
+			[
+				"",
+				"Git: Add Current File"
+			],
+			[
+				"git: st",
+				"Git: Status"
+			],
+			[
+				"git: add",
+				"Git: Add Current File"
+			],
+			[
+				"git:co",
+				"Git: Commit"
+			],
+			[
+				"git:sta",
+				"Git: Status"
+			],
+			[
+				"git: log",
+				"Git: Quick Log"
+			],
+			[
+				"git: co",
+				"Git: Commit"
+			],
+			[
+				"git: ad",
+				"Git: Add Current File"
 			],
 			[
 				"git:s",
 				"Git: Status"
 			],
 			[
-				"gi",
-				"Git: Quick Add"
+				"git:a",
+				"Git: Add Current File"
 			],
 			[
-				"Git:",
-				"Git: Init"
+				"git:ad",
+				"Git: Add Current File"
+			],
+			[
+				"gi",
+				"Git: Quick Add"
 			],
 			[
 				"SublimeGit: Add License ",
@@ -187,10 +376,6 @@
 				"Set Syntax: Git Graph"
 			],
 			[
-				"git",
-				"Set Syntax: Git Commit Message"
-			],
-			[
 				"pac",
 				"Package Control: Install Package"
 			],
@@ -201,19 +386,16 @@
 			[
 				"Package Control: Install Package ",
 				"Package Control: Install Package"
-			],
-			[
-				"",
-				"Set Syntax: PHP"
 			]
 		],
-		"width": 416.0
+		"width": 528.0
 	},
 	"console":
 	{
 		"height": 126.0,
 		"history":
 		[
+			"$git add",
 			"git ",
 			"SublimeGit: Add License ",
 			"git",
@@ -240,16 +422,31 @@
 	[
 		"/E/OpenServer522/OpenServer/domains/Task",
 		"/E/OpenServer522/OpenServer/domains/Task/Lib",
-		"/E/OpenServer522/OpenServer/domains/Task/Lib/Request"
+		"/E/OpenServer522/OpenServer/domains/Task/Lib/Controller"
 	],
 	"file_history":
 	[
-		"/E/OpenServer522/OpenServer/domains/Task/Lib/Request/URL.php",
-		"/E/OpenServer522/OpenServer/domains/Task/Lib/CallController.php",
-		"/C/Documents and Settings/Администратор/Application Data/Sublime Text 3/Packages/SublimeGit/SublimeGit.sublime-settings",
-		"/C/Documents and Settings/Администратор/Application Data/Sublime Text 3/Packages/Git/Git.sublime-settings",
+		"/C/Documents and Settings/Администратор/Application Data/Sublime Text 3/Packages/DocBlockr/README.md",
+		"/C/Documents and Settings/Администратор/Application Data/Sublime Text 3/Packages/DocBlockr/Base File.sublime-settings",
 		"/C/Documents and Settings/Администратор/Application Data/Sublime Text 3/Packages/User/SublimeGit.sublime-settings",
+		"/C/Documents and Settings/Администратор/Application Data/Sublime Text 3/Packages/SublimeGit/SublimeGit.sublime-settings",
+		"/E/OpenServer522/OpenServer/domains/Task/.gitignore",
+		"/E/OpenServer522/OpenServer/domains/Task/Start.php",
+		"/E/OpenServer522/OpenServer/domains/Task/Templates/First.tpl",
+		"/E/OpenServer522/OpenServer/domains/Task/Controller/First.php",
+		"/E/OpenServer522/OpenServer/domains/Task/Lib/Controller/ControllerBase.php",
+		"/E/OpenServer522/OpenServer/domains/Task/Lib/Controller/CallController.php",
+		"/E/OpenServer522/OpenServer/domains/Task/Lib/Twig/lib/Twig/Template.php",
+		"/E/OpenServer522/OpenServer/domains/Task/Lib/Request/URL.php",
+		"/C/Documents and Settings/Администратор/Application Data/Sublime Text 3/Packages/Xdebug Client/Xdebug.sublime-settings",
 		"/C/Documents and Settings/Администратор/Application Data/Sublime Text 3/Packages/User/Xdebug.sublime-settings",
+		"/C/Documents and Settings/Администратор/Application Data/Sublime Text 3/Packages/User/ProjectPHPClassBrowser.sublime-settings",
+		"/C/Documents and Settings/Администратор/Application Data/Sublime Text 3/Packages/Project PHP ClassBrowser/ProjectPHPClassBrowser.sublime-settings",
+		"/E/OpenServer522/OpenServer/domains/Task/Lib/Twig/lib/Twig/Environment.php",
+		"/E/OpenServer522/OpenServer/domains/Task/Templates/Base.html.twig",
+		"/E/OpenServer522/OpenServer/domains/Task/Lib/CallController.php",
+		"/E/OpenServer522/OpenServer/domains/Task/.htaccess",
+		"/C/Documents and Settings/Администратор/Application Data/Sublime Text 3/Packages/Git/Git.sublime-settings",
 		"/C/Documents and Settings/Администратор/Application Data/Sublime Text 3/Packages/User/Git.sublime-settings",
 		"/C/Documents and Settings/Администратор/Application Data/Sublime Text 3/Packages/SideBarGit/SideBarGit.sublime-settings",
 		"/C/Documents and Settings/Администратор/Application Data/Sublime Text 3/Packages/User/Distraction Free.sublime-settings",
@@ -258,12 +455,8 @@
 		"/C/Documents and Settings/Администратор/Application Data/Sublime Text 3/Packages/User/SideBarGit.sublime-settings",
 		"/C/Documents and Settings/Администратор/Application Data/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/C/Documents and Settings/Администратор/Application Data/Sublime Text 3/Packages/User/SublimeCodeIntel.sublime-settings",
-		"/C/Documents and Settings/Администратор/Application Data/Sublime Text 3/Packages/Xdebug Client/Xdebug.sublime-settings",
-		"/C/Documents and Settings/Администратор/Application Data/Sublime Text 3/Packages/DocBlockr/Base File.sublime-settings",
 		"/C/Documents and Settings/Администратор/Application Data/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-		"/C/Documents and Settings/Администратор/Application Data/Sublime Text 3/Packages/Project PHP ClassBrowser/ProjectPHPClassBrowser.sublime-settings",
 		"/C/Documents and Settings/Администратор/Application Data/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
-		"/E/OpenServer522/OpenServer/domains/Task/Start.php",
 		"/E/OpenServer522/OpenServer/domains/Task/Lib/Config/ConfigRouting.php",
 		"/E/OpenServer522/OpenServer/domains/Task/Lib/Config/ConfigBase.php",
 		"/E/OpenServer522/OpenServer/domains/Task/Config/Routing/default.xml",
@@ -293,6 +486,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"param",
+			"start",
+			"Call",
 			"git",
 			"sublimelinter_executable_map"
 		],
@@ -323,36 +519,157 @@
 			[
 				{
 					"buffer": 0,
+					"file": "Lib/Controller/CallController.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1824,
+						"buffer_size": 2907,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								102,
-								102
+								1852,
+								1852
 							]
 						],
 						"settings":
 						{
-							"__vi_external_disable": true,
-							"draw_white_space": "none",
-							"git_repo": "E:\\OpenServer522\\OpenServer\\domains\\Task",
-							"git_status": true,
-							"git_view": "status",
-							"syntax": "Packages/SublimeGit/syntax/SublimeGit Status.tmLanguage",
-							"translate_tabs_to_spaces": false,
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 565.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
 							"word_wrap": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 142,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								142,
+								142
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
 					"type": "text"
 				}
 			]
@@ -373,18 +690,32 @@
 			[
 				0,
 				0,
-				1,
+				2,
 				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			],
+			[
+				1,
+				1,
+				2,
+				2
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
 		[
 			0.0,
+			0.7,
 			1.0
 		]
 	},
@@ -397,7 +728,19 @@
 	{
 		"height": 100.0
 	},
+	"output.git-push":
+	{
+		"height": 0.0
+	},
+	"output.git-remote":
+	{
+		"height": 100.0
+	},
 	"output.unsaved_changes":
+	{
+		"height": 100.0
+	},
+	"output.xdebug":
 	{
 		"height": 100.0
 	},
@@ -440,7 +783,51 @@
 	{
 		"xdebug":
 		{
-			"hide_conflict": false
+			"hide_conflict": false,
+			"restore_index":
+			{
+				"30":
+				{
+					"group": 0,
+					"index": 0
+				}
+			},
+			"restore_layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						2,
+						1
+					],
+					[
+						0,
+						1,
+						1,
+						2
+					],
+					[
+						1,
+						1,
+						2,
+						2
+					]
+				],
+				"cols":
+				[
+					0.0,
+					0.5,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					0.676570820021,
+					1.0
+				]
+			}
 		}
 	},
 	"show_minimap": true,
