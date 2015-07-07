@@ -41,7 +41,7 @@
         // нам ввели пустой запрос в корень "/"
         $Array_recog['Controller'] = 'default';
         $Array_recog['Action'] = 'default';
-        $Array_recog['Param'] = 'default';
+        $Array_recog['Param'] = null;
         return $Array_recog;
       }   
       if (empty($Array_url[1])) 
@@ -49,7 +49,7 @@
         // нам ввели запрос в корень "/Controller/"
         $Array_recog['Controller'] = $Array_url[0];
         $Array_recog['Action'] = 'default';
-        $Array_recog['Param'] = 'default';
+        $Array_recog['Param'] = null;
         return $Array_recog;
       }
       if (empty($Array_url[2]))
@@ -57,7 +57,7 @@
         // нам ввели запрос в корень "/Controller/action/"
         $Array_recog['Controller'] = $Array_url[0];
         $Array_recog['Action'] = $Array_url[1];
-        $Array_recog['Param'] = 'default';
+        $Array_recog['Param'] = null;
         return $Array_recog;
       } else
       {

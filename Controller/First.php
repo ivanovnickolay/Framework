@@ -13,7 +13,7 @@ class First extends ControllerBase
 	
 }
 
-public function First($name)	
+public function First($name="")	
 {
 	$Param= array('name' => $name);
 	$this->View('First.tpl', $Param);

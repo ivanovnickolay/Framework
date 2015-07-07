@@ -20,16 +20,18 @@ function __construct()
     // Получаем разобранную строку и 
     // присваеме значение пременным 
     $ArrayUrl=Url::RecognozeURL();
+  //  var_dump($ArrayUrl);
     $this->Controller=$ArrayUrl['Controller'];
     $this->Action=$ArrayUrl['Action'];
     $this->Param=$ArrayUrl['Param'];
-}
+    }
 
 /**
  * Функция проверяет наличие файла контроллера в системе 
  * и если все хорошо то возвращает путь к нему 
  * при отсутствии файла генерирует ошибку   
  **/
+
 public function Call()
 {
 	$Path = './Controller/'.$this->Controller.'.php';
@@ -41,52 +43,54 @@ public function Call()
 	}
 	// Файл найден Подключаем его 
 	include_once ("$Path");
+  
 	// Проверяем наличие в нем нужного класса
-	if (!class_exists($this->Controller)) 
-	{
-		throw new Exception("Class Controller not found", 2);
-	}
-	//$Obj = new $this->Controller ();
-	if (!$this->hasMethod()) 
-	{
-	throw new Exception("Action not found", 3);
-	}
+	if (!class_exists($this->Controller)) {throw new Exception("Class Controller not found", 2);}
+	if (!$this->hasMethod()) {throw new Exception("Action not found", 3);}
   // Проверяем равенство параметров 
-  if ($this->getCountParam()==0) {
-    call_user_func_array(array( new $this->Controller() ,$this->Action));
-  }
-   $cnt=count($this->Param);
-    echo "count  $cnt " ;
+      // если список параметров не пуст и количество параметров которые переданы равен параметрам метода то 
+      // запускаем метод
+  if ((!is_null($this->Param)) and ($this->getCountParam()==count($this->Param))) {
+      call_user_func_array(array( new $this->Controller() ,$this->Action, $this->Param));
+   } 
+      //если список параметров пуст и количество параметров метода равно нулю  то 
+      // запускаем метод без параметров
+   if ((is_null($this->Param)) and ($this->getCountParam()==0)) {
+       call_user_func_array(array( new $this->Controller() ,$this->Action));}
+       // иначе выдаем ошибку 
+    else {throw new Exception("Count param not found", 3);}
+   
 
-  if ($this->getCountParam()==count($this->Param)) {
-  call_user_func_array(array( new $this->Controller() ,$this->Action),$this->Param);
-  } else {throw new Exception("Count param not found", 3);}
+  //if ($this->getCountParam()==count($this->Param)) {
+  //call_user_func_array(array( new $this->Controller() ,$this->Action),$this->Param);
+  //return;
+  //} else {throw new Exception("Count param not found", 3);}
   
 }
 
-// Проверяем есть ли метод в указано классе 
-// есть есть то возвращаем Истинно 
-// если нет - то ложь
-// http://ua2.php.net/manual/ru/reflectionclass.hasmethod.php
+/**
+ * Проверяем есть ли метод в указано классе 
+ * http://ua2.php.net/manual/ru/reflectionclass.hasmethod.php
+ * @return boolean истинно если метод есть и ложь если метода нет 
+ */
 public function hasMethod()
 {
  if (class_exists($this->Controller)) {
   $this->ReflectorClass= new ReflectionClass($this->Controller);
     if (!$this->ReflectorClass->hasMethod($this->Action)) 
       { return false;} 
-    else { return true;
-     }
+       else { return true;}
  } else {return false;}
   
 }
 
 
-// Узнаем количество параметров в методе который будем вызывать
-// возвращаем количество параметров
+/** Узнаем количество параметров в методе который будем вызывать возвращаем количество параметров
+ * @return CountParam количесво параметров в методе 
+ */
 public function getCountParam()
 {
  $CountParam = $this->ReflectorClass->getMethod($this->Action)->getnumberofparameters();
- echo "CountParam $CountParam  ";
  return $CountParam;
 }
 
