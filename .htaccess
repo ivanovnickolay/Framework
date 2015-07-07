@@ -4,11 +4,21 @@
 # RewriteRule ^(.*)$ start.php?route=$1 [L,QSA]
 
 #включаем поддержку перезаписи запросов
-RewriteEngine On
+# RewriteEngine On
 #базовая папка от которой будет использоваться перезапись запросов (закомментировано)
 # RewriteBase /
 #опеределяем файлы и папки
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
 # RewriteRule ^(.*)$ ./start.php
-RewriteRule . start.php
+# RewriteRule . start.php
+
+
+<IfModule mod_rewrite.c>
+    DirectoryIndex start.php
+    RewriteEngine On
+    RewriteBase /
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ start.php [QSA,L]
+</IfModule>
