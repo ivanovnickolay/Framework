@@ -6,6 +6,7 @@
 //require_once ("./Lib/DB/DB.php");
 require_once ("./Lib/Request/Url.php");
 require_once ("./Lib/Controller/CallController.php");
+require_once ("./Lib/Exception/ExceptionBase.php");
 
 define('PATH_ROOT', dirname(__FILE__));
 
@@ -14,9 +15,9 @@ try
 {
 $Controller->Call();	
 } 
-catch (Exception $e) 
+catch (ExceptionBase $e) 
 {
-	echo $e->getMessage();
+	echo $e->getError();
 }
 
 

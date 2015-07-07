@@ -4,6 +4,7 @@
  * Класс ответственный за проверку наличия файла контроллера и функции в нем 
  */
 require_once ("./Lib/Request/URL.php");
+require_once ("./Lib/Exception/ExceptionBase.php");
 
 Class CallController
 {
@@ -38,35 +39,28 @@ public function Call()
 	//Проверяем начилие файла 
 	if (!file_exists($Path)) 
 	{
-		$S="File Controller ".$Path." Not found";
-	 throw new Exception($S, 1);
+            $S="File Controller ".$Path." Not found";
+            throw new ExceptionBase($S, 1);
 	}
 	// Файл найден Подключаем его 
 	include_once ("$Path");
   
 	// Проверяем наличие в нем нужного класса
-	if (!class_exists($this->Controller)) {throw new Exception("Class Controller not found", 2);}
-	if (!$this->hasMethod()) {throw new Exception("Action not found", 3);}
+	if (!class_exists($this->Controller)) {throw new ExceptionBase("Class Controller not found", 2);}
+	if (!$this->hasMethod()) {throw new ExceptionBase("Action not found", 3);}
   // Проверяем равенство параметров 
       // если список параметров не пуст и количество параметров которые переданы равен параметрам метода то 
-      // запускаем метод
-  if ((!is_null($this->Param)) and ($this->getCountParam()==count($this->Param))) {
-      call_user_func_array(array( new $this->Controller() ,$this->Action, $this->Param));
-   } 
+     // запускаем метод
+        if ((!is_null($this->Param)) and ($this->getCountParam()==count($this->Param))) {
+            call_user_func_array(array( new $this->Controller() ,$this->Action, $this->Param));
+        } 
       //если список параметров пуст и количество параметров метода равно нулю  то 
       // запускаем метод без параметров
-   if ((is_null($this->Param)) and ($this->getCountParam()==0)) {
-       call_user_func_array(array( new $this->Controller() ,$this->Action));}
-       // иначе выдаем ошибку 
-    else {throw new Exception("Count param not found", 3);}
-   
-
-  //if ($this->getCountParam()==count($this->Param)) {
-  //call_user_func_array(array( new $this->Controller() ,$this->Action),$this->Param);
-  //return;
-  //} else {throw new Exception("Count param not found", 3);}
-  
-}
+        if ((is_null($this->Param)) and ($this->getCountParam()==0)) {
+            call_user_func_array(array( new $this->Controller() ,$this->Action));}
+            // иначе выдаем ошибку 
+        else {throw new ExceptionBase("Count param not found", 3);}
+  }
 
 /**
  * Проверяем есть ли метод в указано классе 
