@@ -22,7 +22,7 @@ class RecognozeURL
 				$Array_recog['Param'] = 'default';
 				return $Array_recog;
 			}		
-			if (empty($Array_url[1)) 
+                     if (empty($Array_url[1])) 
 			{
 				// нам ввели запрос в корень "/Controller/"
 				$Array_recog['Controller'] = $Array_url[0];
@@ -30,7 +30,7 @@ class RecognozeURL
 				$Array_recog['Param'] = 'default';
 				return $Array_recog;
 			}
-			if (empty($Array_url[2)) 
+			if (empty($Array_url[2])) 
 			{
 				// нам ввели запрос в корень "/Controller/action/"
 				$Array_recog['Controller'] = $Array_url[0];
