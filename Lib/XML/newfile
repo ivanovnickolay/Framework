@@ -1,0 +1,51 @@
+http://php.net/manual/ru/simplexmlelement.attributes.php
+
+
+Use attributes to display when it meets certain condition defined attribute / value in xml tags.
+
+Use atributos para exibir quando atende determinada condição definida atributo / valor em tags XML.
+
+Consider the following example:
+Considere o seguinte exemplo:
+
+(file.xml)
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<list>
+    <item type="Language">
+        <name>PHP</name>
+        <link>www.php.net</link>
+    </item>
+    <item type="Database">
+        <name>Java</name>
+        <link>www.oracle.com/br/technologies/java/‎</link>
+    </item>
+</list>
+
+Checks if the attribute value equals "Language", if equal prints everything that is related to "Language".
+
+Verifica se o valor do atributo é igual a "Language", se for, imprime tudo o que for relativo ao mesmo.
+
+<?php
+
+$xml = simplexml_load_file("file.xml");
+
+foreach($xml->children() as $child) {
+    
+        $role = $child->attributes();
+
+        foreach($child as $key => $value) {
+            
+            if($role == "Language")
+            echo("[".$key ."] ".$value . "<br />");
+            
+        }
+}
+?>
+
+output:
+saída:
+
+[name] PHP
+[link] www.php.net
