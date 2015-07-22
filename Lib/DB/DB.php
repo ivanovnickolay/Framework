@@ -1,5 +1,6 @@
 <?php
 require_once ("./Lib/Config/ConfigSingleton.php");
+require_once ("./Lib/XML/LoadFromXML.php");
 require_once ("../Exception/ExceptionBase.php");
 /**
  * Класс подключается к базе данных и возвращает экземпляр 
@@ -18,14 +19,20 @@ class DB {
      */
     private function __construct() 
     {
-        $Conf = ConfigSingleton::init();
-        
-        $host = $Conf->getValue('DB','host');
-        $user = $Conf->getValue('DB','username');
-        $password= $Conf->getValue('DB','passwd');
-        $database = $Conf->getValue('DB','dbname');
-        $port = $Conf->getValue('DB','port');
-        $socket= $Conf->getValue('DB','socket');
+//        $Conf = ConfigSingleton::init();
+//        
+//        $host = $Conf->getValue('DB','host');
+//        $user = $Conf->getValue('DB','username');
+//        $password= $Conf->getValue('DB','passwd');
+//        $database = $Conf->getValue('DB','dbname');
+//        $port = $Conf->getValue('DB','port');
+//        $socket= $Conf->getValue('DB','socket');
+        $obj=new LoadFromXML("DB", "DB");
+        $ArrayParam=$obj->Load();
+        if (is_array($ArrayParam)){
+            //http://ua2.php.net/manual/ru/function.extract.php
+            extract($ArrayParam);    
+        }
         $MySql = new mysqli($host, $user, $password, $database, $port, $socket);
         if ($MySql->connect_error) 
         {

@@ -6,6 +6,7 @@
  *
  * @author Администратор
  */
+include_once './ConfigBase.php';
 class ConfigDB extends ConfigBase
 {
     /**

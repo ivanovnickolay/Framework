@@ -11,9 +11,9 @@ socket Задает сокет или именованный пайп, кото�
 -->
 <root id="DB">
     <host>127.0.0.1</host>
-    <username>root</username>
-    <passwd></passwd>
-    <dbname>Task</dbname>
+    <user>root</user>
+    <password></password>
+    <$database>Task</$database>
     <port>3306</port>
     <socket></socket>
 </root>

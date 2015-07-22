@@ -8,7 +8,8 @@ require_once ("./Lib/Request/Url.php");
 require_once ("./Lib/Controller/CallController.php");
 require_once ("./Lib/Exception/ExceptionBase.php");
 
-define('PATH_ROOT', dirname(__FILE__));
+// Задаем корневой каталог по умолчанию 
+define('PATH_ROOT', $_SERVER['DOCUMENT_ROOT']);
 
 $Controller = new CallController();
 try 

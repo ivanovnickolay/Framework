@@ -8,48 +8,50 @@
 
 /**
  * Description of LoadFromXML
- *
- * @author Администратор
+ * Загрузка и обработка файлов XML
+ *  @author Администратор
  */
 class LoadFromXML {
     
     /**
-     * 
+     * Хранит загруженный файл 
      */
     protected $XML; 
     
+    protected $ArrXML;
+
+
     /**
-     * 
      * @param type $TypeConfig Указание из какой папки в подпапке Config загружать файл
      * @param type $XmlFileName Указание какой конкретно файл закружать 
-     * @throws ExceptionBase  вывод ошибок при подключении к файлу
+     * @throws ExceptionBase  вывод ошибок при подключении к файлу и при 
+     * отсутствиии файла 
      */
     public function __construct($TypeConfig, $XmlFileName) {
-     // $NameFile = '../Config/'.$TypeConfig.'/'.$XmlFileName.'.xml';
-       $NameFile='E:\OpenServer522\OpenServer\domains\Task\Config\DB\DB.xml';
-       if (file_exists($NameFile)){
+ //   define('PATH_ROOT', $_SERVER['DOCUMENT_ROOT']);
+        $NameFile =PATH_ROOT."/Config/$TypeConfig/$XmlFileName.xml";
+        if (file_exists($NameFile)){
         $this->XML= simplexml_load_file($NameFile);
             if ($this->XML === false) {
-               //"Ошибка загрузки XML\n";
                 foreach(libxml_get_errors() as $error) {
                    $ListErr=$error->message.'';
-                   //throw new ExceptionBase($ListErr);
-                   echo $ListErr;
                 }
+                throw new ExceptionBase($ListErr);
             }
-       }  else {
-           echo 'File not found';    
-       }  
+       }  else {throw new ExceptionBase("File $NameFile not found");}  
     }
+    /**
+     * Загружает данные файла в Хеш-массив ArrXML
+     * @return ArrXML атрибут в ключе а значение атрибута в значенни 
+     */
     
     public function Load(){
-       // $Attr = $this->XML->attributes();
+        if(isset($this->XML)){   
             foreach($this->XML as $key => $value) {
-                echo("[".$key ."] ".$value . "<br />");
+                // echo("[".$key ."] ".$value . "<br />");
+                $this->ArrXML[$key]=$value;
             }
+        }else{echo 'Error'; }    
+    return $this->ArrXML;
     }
  }
- 
- $obj=new LoadFromXML("DB","DB");
- $obj->Load();
- 
